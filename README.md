@@ -36,7 +36,7 @@ if we connect one instead of the other in phases we can flip them , we will know
 
 ## After you Connected it Open **Arduino IDE** and choose the Board Arduino uno and change it if it is not uno
 
-![](Screenshot from 2026-08-29 21-33-30.png)
+![](Screenshotfrom2026-08-2921-33-30.png)
 
 
 ## Here is A sample code to test the Encoders :
