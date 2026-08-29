@@ -36,13 +36,12 @@ if we connect one instead of the other in phases we can flip them , we will know
 
 ## After you Connected it Open **Arduino IDE** and choose the Board Arduino uno and change it if it is not uno
 
-![](.png)
+![](Screenshot from 2026-08-29 21-33-30.png)
 
 
 ## Here is A sample code to test the Encoders :
 
-``
-
+```
 // Encoder total tick counter — Arduino Uno
 
 #define ENCODER_PIN_A  2   // INT0
@@ -81,8 +80,7 @@ void encoderISR_B() {
   bool b = digitalRead(ENCODER_PIN_B);
   total_ticks += (a != b) ? 1 : -1;
 }
-
-``
+```
 ## How it Works :
 
 The encoder disk has a series of evenly spaced slots cut into it. On one side of the disk sits an LED; on the other side sits a light receiver (phototransistor). As the encoder shaft turns, each slot alternately lets light through to the receiver and then blocks it, producing a square-wave HIGH/LOW electrical signal.
