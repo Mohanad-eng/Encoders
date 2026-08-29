@@ -127,7 +127,7 @@ Equal (A == B)	Moving backward	−1
 
 ## Some note :
 
-As we know we use the interrupt pins in the Ardunio Uno (2,3) and on mega 2,3,18,19,20,21
+As we know we use the interrupt pins in the **Ardunio Uno (2,3)** and **on mega 2,3,18,19,20,21** , **ESP32 GPIO 4 ,GPIO 13 ,GPIO 14 ,GPIO 16 ,GPIO 17 ,GPIO 18,GPIO 19 ,GPIO 21 ,GPIO 22 ,GPIO 23,GPIO 25 ,GPIO 26 ,GPIO 27 ,GPIO 32 ,GPIO 33**
 
 Why not just poll a regular digital pin instead?
 
@@ -135,4 +135,4 @@ You could read a normal digital pin with digitalRead() inside loop(), but that b
 
 
 
-All CopyRights For MindCloud Team, Alexandria Universty 
+**All CopyRights For MindCloud Team, Alexandria Universty** 
