@@ -124,6 +124,24 @@ Equal (A == B)	Moving backward	−1
 
 ![](https://fb00d14c.delivery.rocketcdn.me/wp-content/uploads/2016/07/Rotary-Encoder-Output-Signal-Working-Principle-Photo-.png)
 
+## when we use it : 
+
+**Flat, firm, high-traction surfaces — pavement, tile, lab/warehouse floors** >>>> where a wheel turning by a certain amount reliably corresponds to the robot moving that same amount.
+
+Short-term, relative motion tracking — encoders are excellent at answering "how far did I just move since a moment ago," especially when combined with an IMU for smoother short-term estimates.
+Indoor or controlled environments where wheel slip is minimal and consistent.
+
+## When We dont use it :
+
+**Loose or slippery terrain — sand, gravel, mud, wet or icy floors** >>>> The wheel can spin (or skid) without the robot actually moving that distance, so the tick count no longer reflects true travel. This is called wheel slip, and it's the single biggest source of encoder-odometry error.
+
+**Rough or uneven terrain — bumps and obstacles** can cause a wheel to briefly lose contact with the ground or skid sideways, again breaking the simple "ticks = distance" assumption.
+
+**Skid-steer / tank-style turning** >>>> wheels scrub sideways against the ground when turning in place, which can throw off tick-based distance and heading estimates unless carefully calibrated.
+
+**Long-duration navigation — even under good conditions** >>>> small errors in encoder odometry accumulate over time (this is called drift). Encoders alone are not reliable for long-term absolute positioning; they need to be fused with other sensors (IMU, GPS, LIDAR/SLAM) — commonly via a filter such as an Extended Kalman Filter — to correct for accumulated drift.
+
+The most Famous Localization Algorthim that uses Encoders is the **Dead Reckoning**
 
 ## Some note :
 
