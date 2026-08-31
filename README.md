@@ -153,4 +153,4 @@ You could read a normal digital pin with digitalRead() inside loop(), but that b
 
 
 
-**All CopyRights For MindCloud Team, Alexandria Universty** 
+**All CopyRights For MindCloud Team, Alexandria Universty 🇪🇬** 
